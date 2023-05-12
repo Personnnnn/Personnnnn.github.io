@@ -9,8 +9,8 @@
 </style>
 <script src="https://simplycodingcourses.com/files/simply.js"></script>
 <script>
-var p1_wins;
-var p2_wins;
+var p1_wins=0;
+var p2_wins=0;
 var row1=[0,0,0];
 var row2=[0,0,0];
 var row3=[0,0,0];
@@ -28,9 +28,23 @@ function checkForWins(row){
 	}
 	if (result==3){
 		localStorage.setItem('winner',"Player One");
+		if (localStorage.getItem("p1wins")){
+			p1_wins=parseInt(localStorage.getItem("p1wins"));
+			p1_wins+=1;
+		}else{
+			p1_wins+=1;
+		}
+		localStorage.setItem("p1wins",p1_wins.toString());
 		window.location="win.html";
 	}else if (result==-3){
 		localStorage.setItem('winner',"Player Two");
+		if (localStorage.getItem("p2wins")){
+			p2_wins=parseInt(localStorage.getItem("p2wins"));
+			p2_wins+=1;
+		}else{
+			p2_wins+=1;
+		}
+		localStorage.setItem("p2wins",p2_wins.toString());
 		window.location="win.html";
 	}else{
 		//hi

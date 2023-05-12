@@ -13,8 +13,12 @@ function start(){
   p1_txt.center().offset(0,-25);
   p2_txt.center().offset(0,25);
   menu.centerH();
-  p1_txt.setText("Player One Wins: "+localStorage.getItem("p1wins"));
-  p2_txt.setText("Player Two Wins: "+localStorage.getItem("p2wins"));
+  if (localStorage.getItem("p1wins"){
+    p1_txt.setText("Player One Wins: "+localStorage.getItem("p1wins"));
+  }
+  if (localStorage.getItem("p2wins")){
+    p2_txt.setText("Player Two Wins: "+localStorage.getItem("p2wins"));
+  }
 }
 </script>
 </head>

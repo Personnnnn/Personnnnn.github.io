@@ -5,6 +5,16 @@
 <script>
 function start(){
   sjs.open("target",500,400);
+  var p1_txt=new sjs.Text("Player One Wins: 0",21,"orange");
+  var p2_txt=new sjs.Text("Player Two Wins: 0",21,"orange");
+  var menu=new sjs.Button("Menu",function(){
+    winndow.location="index.html";
+  });
+  p1_txt.center().offset(0,-25);
+  p2_txt.center().offset(0,25);
+  menu.centerH();
+  p1_txt.setText("Player One Wins: "+localStorage.getItem("p1wins"));
+  p2_txt.setText("Player Two Wins: "+localStorage.getItem("p2wins"));
 }
 </script>
 </head>

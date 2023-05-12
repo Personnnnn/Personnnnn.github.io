@@ -1,6 +1,6 @@
 <html>
 <head>
-<title> Custom Game </title>
+<title> Win History </title>
 <script src="https://simplycodingcourses.com/files/simply.js"></script>
 <script>
 function start(){
@@ -12,7 +12,7 @@ function start(){
   });
   p1_txt.center().offset(0,-25);
   p2_txt.center().offset(0,25);
-  menu.centerH();
+  menu.center().offset(0,50);
   if (localStorage.getItem("p1wins")){
     p1_txt.setText("Player One Wins: "+localStorage.getItem("p1wins"));
   }
@@ -23,7 +23,7 @@ function start(){
 </script>
 </head>
 <body onload="start()">
-<h1> Custom Game </h1>
+<h1> Win History </h1>
 
 <div id="target" style="margin:auto;background:grey;"></div>
 </body>

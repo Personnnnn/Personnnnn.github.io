@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> Menu </title>
+<script src="https://simplycodingcourses.com/files/simply.js"></script>
+<script>
+function start(){
+	sjs.open("target",500,400);
+	var bg=new sjs.Image("bg_color.png");
+	bg.setSize(500,500);
+	var text=new sjs.Text("Click and drag the X or O to play O is player two X is player One",21,"orange");
+	text.centerH();
+	var play_btn=new sjs.Button("Play",function(){
+		window.location="tic-tac-toe.html";
+	});
+	play_btn.center();
+}
+</script>
+</head>
+<body onload="start()">
+<center>
+<h1> Menu </h1>
+</center>
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html> 

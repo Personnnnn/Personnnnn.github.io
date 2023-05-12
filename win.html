@@ -1,0 +1,28 @@
+<html>
+<head>
+<title> Win </title>\
+<script src="https://simplycodingcourses.com/files/simply.js"></script>
+<script>
+function start(){
+	sjs.open("target",500,400);
+	var bg=new sjs.Image("bg_color.png");
+	bg.setSize(500,500);
+	var win=localStorage.getItem("winner");
+	var win_text=new sjs.Text(win,21,"orange");
+	win_text.setText(win+" has won");
+	win_text.centerH();
+	var menuBtn=new sjs.Button("Menu",function(){
+		window.location="index.html";
+	});
+	menuBtn.center().offset(0,-25);
+}
+</script>
+</head>
+<body onload="start()">
+<center>
+<h1> Win </h1>
+</center>
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html> 

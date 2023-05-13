@@ -22,7 +22,7 @@ function start(){
 	bg.setSize(300,300);
 	var gameMusic=new Audio("game_music.wav");
 	var music_playing=false;
-	sjs.onKeyDown(KEY_SPACE,function(){
+	sjs.keyDown(SPACE_KEY,function(){
 		if (music_playing==false){
 			music_playing=true;
 			gameMusic.play();

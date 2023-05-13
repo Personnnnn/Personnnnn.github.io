@@ -23,7 +23,7 @@ function start(){
 	var gameMusic=new Audio("game_music.wav");
 	var music_playing=false;
 	sjs.onKeyDown(KEY_SPACE,function(){
-		if (music_playinng==false){
+		if (music_playing==false){
 			music_playing=true;
 			gameMusic.play();
 		}else if (music_playing==true){

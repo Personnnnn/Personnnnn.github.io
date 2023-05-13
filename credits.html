@@ -19,6 +19,21 @@ function start(){
     window.location="index.html";
   });
   menu.center();
+  var gameMusic=new Audio("game_music.wav");
+	var music_playing=false;
+	sjs.keyDown(SPACE_KEY,function(){
+		if (music_playing==false){
+			music_playing=true;
+			gameMusic.play();
+		}else if (music_playing==true){
+			music_playing=false;
+			gameMusic.pause();
+		}
+	});
+	gameMusic.addEventListener("ended",function(){
+		this.currentTime=0;
+		this.play();
+	});
 }
 </script>
 </head>

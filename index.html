@@ -17,6 +17,17 @@ function start(){
 		window.location="tic-tac-toe.html";
 	});
 	play_btn.center();
+	var gameMusic=new Audio("game_music.wav");
+	var music_playing=false;
+	sjs.onKeyDown(KEY_SPACE,function(){
+		if (music_playinng==false){
+			music_playing=true;
+			gameMusic.play();
+		}else if (music_playing==true){
+			music_playing=false;
+			gameMusic.pause();
+		}
+	});
 }
 </script>
 </head>

@@ -32,7 +32,7 @@ function checkForWins(row){
 			p1_wins=parseInt(localStorage.getItem("p1wins"));
 			p1_wins+=1;
 		}else{
-			p1_wins+=1;
+			p1_wins=1;
 		}
 		localStorage.setItem("p1wins",p1_wins.toString());
 		window.location="win.html";
@@ -42,7 +42,7 @@ function checkForWins(row){
 			p2_wins=parseInt(localStorage.getItem("p2wins"));
 			p2_wins+=1;
 		}else{
-			p2_wins+=1;
+			p2_wins=1;
 		}
 		localStorage.setItem("p2wins",p2_wins.toString());
 		window.location="win.html";

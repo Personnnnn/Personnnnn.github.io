@@ -7,12 +7,14 @@ function start(){
   sjs.open("target",500,400);
   var bg=new sjs.Image("images.jpg");
   bg.setSize(500,400);
-  var creator=new sjs.Text("Creted by Calvin Kuehl",21,"orange");
-  var images=new sjs.Text("Images:\nBackgrounds: Google Search\n Board: piskel",21,"orange");
+  var creator=new sjs.Text("Created by Calvin Kuehl",21,"orange");
+  var images=new sjs.Text("Backgrounds were obtained using google search",21,"orange");
+  var images_two=new sjs.Text("Board was created with piskel",21,"orange");
   var music=new sjs.Text("Music was created using Chrome Music Lab",21,"orange");
   creator.centerH();
   images.centerH().offset(0,22);
-  music.centerH().offset(0,44);
+  images_two.centerH().offset(0,44);
+  music.centerH().offset(0,66);
   var menu=new sjs.Button("Menu",function(){
     window.location="index.html";
   });

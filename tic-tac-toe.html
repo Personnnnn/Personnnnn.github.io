@@ -21,6 +21,7 @@ function start(){
 	var bg=new sjs.Image("Tic-Tac-Toe.png");
 	bg.setSize(300,300);
 	var gameMusic=new Audio("game_music.wav");
+	gameMusic.loop=true;
 	var music_playing=false;
 	sjs.keyDown(SPACE_KEY,function(){
 		if (music_playing==false){

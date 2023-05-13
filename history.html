@@ -16,10 +16,11 @@ function start(){
     localStorage.setItem("p1wins",0);
     localStorage.setItem("p2wins",0);
     start();
-  }
+  });
   p1_txt.center().offset(0,-25);
   p2_txt.center().offset(0,25);
   menu.center().offset(0,50);
+  reset.center().offset(0,-50);
   if (localStorage.getItem("p1wins")){
     p1_txt.setText("Player One Wins: "+localStorage.getItem("p1wins"));
   }

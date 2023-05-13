@@ -9,8 +9,10 @@ function start(){
 	bg.setSize(500,400);
 	var text=new sjs.Text("Click and drag the X or O to play",21,"orange");
 	var text_two=new sjs.Text("X's are Player One and O's are Player Two",21,"orange");
+	var text_three=new sjs.Text("Press Space to enable music at any time",21,"orange");
 	text.centerH();
 	text_two.centerH().offset(0,22);
+	text_three.centerH().offset(0,44);
 	var play_btn=new sjs.Button("Play",function(){
 		window.location="tic-tac-toe.html";
 	});

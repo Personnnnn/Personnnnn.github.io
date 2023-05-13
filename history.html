@@ -15,11 +15,15 @@ function start(){
   var reset=new sjs.Button("Reset Wins",function(){
     localStorage.setItem("p1wins",0);
     localStorage.setItem("p2wins",0);
+    wins();
   });
   p1_txt.center().offset(0,-25);
   p2_txt.center().offset(0,25);
   menu.center().offset(0,50);
   reset.center().offset(0,80);
+  wins();
+}
+function wins(){
   if (localStorage.getItem("p1wins")){
     p1_txt.setText("Player One Wins: "+localStorage.getItem("p1wins"));
   }

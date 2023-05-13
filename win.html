@@ -15,6 +15,17 @@ function start(){
 		window.location="index.html";
 	});
 	menuBtn.center().offset(0,-25);
+	var gameMusic=new Audio("game_music.wav");
+	var music_playing=false;
+	sjs.onKeyDown(KEY_SPACE,function(){
+		if (music_playinng==false){
+			music_playing=true;
+			gameMusic.play();
+		}else if (music_playing==true){
+			music_playing=false;
+			gameMusic.pause();
+		}
+	});
 }
 </script>
 </head>

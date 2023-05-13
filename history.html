@@ -3,12 +3,12 @@
 <title>Win History</title>
 <script src="https://simplycodingcourses.com/files/simply.js"></script>
 <script>
+var p1_txt=new sjs.Text("Player One Wins: 0",21,"orange");
+var p2_txt=new sjs.Text("Player Two Wins: 0",21,"orange");
 function start(){
   sjs.open("target",500,400);
   var bg=new sjs.Image("bg_color.png");
   bg.setSize(500,400);
-  var p1_txt=new sjs.Text("Player One Wins: 0",21,"orange");
-  var p2_txt=new sjs.Text("Player Two Wins: 0",21,"orange");
   var menu=new sjs.Button("Menu",function(){
     window.location="index.html";
   });

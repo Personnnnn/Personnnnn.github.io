@@ -18,6 +18,7 @@ function start(){
 	});
 	play_btn.center();
 	var gameMusic=new Audio("game_music.wav");
+	gameMusic.loop=true;
 	var music_playing=false;
 	sjs.keyDown(SPACE_KEY,function(){
 		if (music_playing==false){

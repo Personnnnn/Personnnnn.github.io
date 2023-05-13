@@ -29,7 +29,7 @@ function checkForWins(row){
 	if (result==3){
 		localStorage.setItem('winner',"Player One");
 		localStorage.getItem("p1wins")+=1;
-		alertlocalStorage.getItem("p1wins"));
+		alert(localStorage.getItem("p1wins"));
 		window.location="win.html";
 	}else if (result==-3){
 		localStorage.setItem('winner',"Player Two");

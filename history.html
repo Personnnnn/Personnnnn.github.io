@@ -15,7 +15,6 @@ function start(){
   var reset=new sjs.Button("Reset Wins",function(){
     localStorage.setItem("p1wins",0);
     localStorage.setItem("p2wins",0);
-    start();
   });
   p1_txt.center().offset(0,-25);
   p2_txt.center().offset(0,25);

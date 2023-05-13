@@ -14,7 +14,6 @@ function start(){
 	});
 	menu.center().offset(0,25);
 	var gameMusic=new Audio("game_music.wav");
-	gameMusic.loop=true;
 	var music_playing=false;
 	sjs.keyDown(SPACE_KEY,function(){
 		if (music_playing==false){
@@ -24,6 +23,10 @@ function start(){
 			music_playing=false;
 			gameMusic.pause();
 		}
+	});
+	gameMusic.addEventListener("ended",function(){
+		this.currentTime=0;
+		this.play();
 	});
 }
 </script>

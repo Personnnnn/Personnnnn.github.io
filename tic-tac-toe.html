@@ -28,11 +28,11 @@ function checkForWins(row){
 	}
 	if (result==3){
 		localStorage.setItem('winner',"Player One");
-		localStorage.getItem("p1wins")+=1;
+		localStorage.setItem("p1wins",logcalStorage.getItem("p1wins")+1);
 		window.location="win.html";
 	}else if (result==-3){
 		localStorage.setItem('winner',"Player Two");
-		localStorage.getItem("p2wins")+=1;
+		localStorage.setItem("p2wins",localStorage.getItem("p2wins")+1);
 		window.location="win.html";
 	}else{
 		//hi

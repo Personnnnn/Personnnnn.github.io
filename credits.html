@@ -1,0 +1,22 @@
+<html>
+<head>
+<title> Custom Game </title>
+<script src="https://simplycodingcourses.com/files/simply.js"></script>
+<script>
+function start(){
+  sjs.open("target",500,400);
+  var creator=new sjs.Text("Creted by Calvin Kuehl",21,"orange");
+  var images=new sjs.Text("Images:\nBackgrounds: Google Search\n Board: piskel",21,"orange");
+  var music=new sjs.Text("Music was created using Chrome Music Lab",21,"orange");
+  creator.centerH();
+  images.centerH().offset(0,22);
+  music.centerH().offset(0,44);
+}
+</script>
+</head>
+<body onload="start()">
+<h1> Custom Game </h1>
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html> 

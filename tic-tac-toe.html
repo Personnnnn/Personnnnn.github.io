@@ -20,6 +20,17 @@ function start(){
 	bg_color.setSize(300,350);
 	var bg=new sjs.Image("Tic-Tac-Toe.png");
 	bg.setSize(300,300);
+	var gameMusic=new Audio("game_music.wav");
+	var music_playing=false;
+	sjs.onKeyDown(KEY_SPACE,function(){
+		if (music_playinng==false){
+			music_playing=true;
+			gameMusic.play();
+		}else if (music_playing==true){
+			music_playing=false;
+			gameMusic.pause();
+		}
+	});
 }
 function checkForWins(row){
 	var result=0;
